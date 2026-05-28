@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    background: #1D1D2E;
+    color: #fff;
+    padding: 36px 40px 40px;
+    font-size: 13px;
+  }
+
+  /* ── Header ── */
+  .top-bar {
+    background: #6C63FF;
+    margin: -36px -40px 0;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 28px 0 18px;
+  }
+  .hero h1 {
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #fff;
+  }
+  .hero p {
+    font-size: 13px;
+    color: #AAAACC;
+    margin-top: 6px;
+    letter-spacing: 0.5px;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid #6C63FF;
+    margin: 12px 0 16px;
+  }
+
+  /* ── Stats row ── */
+  .stats {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+  .stat {
+    flex: 1;
+    background: #6C63FF;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 700;
+    font-size: 11.5px;
+    border-radius: 6px;
+  }
+
+  /* ── Tier block ── */
+  .tier { margin-bottom: 18px; border-radius: 6px; overflow: hidden; }
+
+  .tier-header {
+    display: flex;
+    align-items: center;
+    padding: 9px 14px;
+    gap: 14px;
+  }
+  .tier-badge {
+    font-size: 13px;
+    font-weight: 900;
+    min-width: 64px;
+    text-align: center;
+  }
+  .tier-label { font-size: 11px; font-weight: 700; letter-spacing: 0.4px; }
+
+  .tier-desc {
+    background: #252538;
+    padding: 6px 14px;
+    font-size: 10px;
+    color: #AAAACC;
+    font-style: italic;
+  }
+
+  /* row colours */
+  .tier-1 .tier-header { background: #E63946; }
+  .tier-2 .tier-header { background: #F4A261; color: #1D1D2E; }
+  .tier-3 .tier-header { background: #E9C46A; color: #1D1D2E; }
+
+  .video-row {
+    display: flex;
+    align-items: center;
+    padding: 8px 14px;
+    gap: 16px;
+  }
+  .video-row:nth-child(odd)  { background: #1A1A2E; }
+  .video-row:nth-child(even) { background: #16213E; }
+
+  .video-name {
+    font-weight: 700;
+    font-size: 10.5px;
+    min-width: 180px;
+    color: #fff;
+  }
+
+  .video-row a {
+    color: #90E0EF;
+    font-size: 9.5px;
+    text-decoration: underline;
+    word-break: break-all;
+  }
+
+  /* ── Skip block ── */
+  .skip-header {
+    background: #4A0000;
+    text-align: center;
+    padding: 8px;
+    font-weight: 700;
+    font-size: 12px;
+    border-radius: 6px 6px 0 0;
+  }
+  .skip-body {
+    background: #2D0000;
+    text-align: center;
+    padding: 10px 20px;
+    color: #FF9999;
+    font-size: 10px;
+    border-radius: 0 0 6px 6px;
+    margin-bottom: 22px;
+    line-height: 1.7;
+  }
+
+  /* ── Section heading ── */
+  .section-title {
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 6px 0 10px;
+    text-transform: uppercase;
+  }
+
+  /* ── Practice papers ── */
+  .res-row {
+    display: flex;
+    align-items: center;
+    padding: 9px 14px;
+    gap: 16px;
+  }
+  .res-row:nth-child(odd)  { background: #f8f9ff; }
+  .res-row:nth-child(even) { background: #eef2f7; }
+
+  .res-name {
+    font-weight: 700;
+    font-size: 10.5px;
+    color: #1D1D2E;
+    min-width: 200px;
+  }
+  .res-row a {
+    color: #1565C0;
+    font-size: 9.5px;
+    text-decoration: underline;
+    word-break: break-all;
+  }
+  .res-wrap { border-radius: 6px; overflow: hidden; margin-bottom: 22px; }
+
+  /* ── Golden rule ── */
+  .golden {
+    background: #6C63FF;
+    border-radius: 6px;
+    padding: 12px 18px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 10.5px;
+    line-height: 1.6;
+    color: #fff;
+  }
+
+  /* ── Footer ── */
+  .bottom-bar {
+    background: #6C63FF;
+    margin: 30px -40px -40px;
+    padding: 8px 40px;
+    text-align: center;
+    font-size: 8.5px;
+    letter-spacing: 0.4px;
+  }
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <span>CUET ENGLISH 2026 · MANZIL 5.0 STUDY GUIDE</span>
+  <span>Exam: 30 May 2026</span>
+</div>
+
+<div class="hero">
+  <h1>CUET ENGLISH 2026</h1>
+  <p>Manzil 5.0 &nbsp;·&nbsp; Last-Minute Video Guide by Rubaika Ma'am</p>
+</div>
+<hr class="divider"/>
+
+<div class="stats">
+  <div class="stat">50 Questions</div>
+  <div class="stat">60 Minutes</div>
+  <div class="stat">+5 / −1 Marking</div>
+  <div class="stat">Max 250 Marks</div>
+</div>
+
+<!-- TIER 1 -->
+<div class="tier tier-1">
+  <div class="tier-header">
+    <span class="tier-badge">TIER 1</span>
+    <span class="tier-label">WATCH FIRST — NON-NEGOTIABLE</span>
+  </div>
+  <div class="tier-desc">Covers 65–70% of the paper. Do these before anything else.</div>
+  <div class="video-row"><span class="video-name">1. Reading Comprehension</span><a href="https://www.youtube.com/watch?v=QcJdMwsFd6Y">https://www.youtube.com/watch?v=QcJdMwsFd6Y</a></div>
+  <div class="video-row"><span class="video-name">2. Tense</span><a href="https://www.youtube.com/watch?v=FKAxhwcZlcs">https://www.youtube.com/watch?v=FKAxhwcZlcs</a></div>
+  <div class="video-row"><span class="video-name">3. Subject-Verb Agreement</span><a href="https://www.youtube.com/watch?v=F5MIrjjXRLU">https://www.youtube.com/watch?v=F5MIrjjXRLU</a></div>
+  <div class="video-row"><span class="video-name">4. Spotting Error</span><a href="https://www.youtube.com/watch?v=JxKT2VNQcL8">https://www.youtube.com/watch?v=JxKT2VNQcL8</a></div>
+  <div class="video-row"><span class="video-name">5. Synonyms &amp; Antonyms</span><a href="https://www.youtube.com/watch?v=W4nxg7M4rqk">https://www.youtube.com/watch?v=W4nxg7M4rqk</a></div>
+  <div class="video-row"><span class="video-name">6. Idioms</span><a href="https://www.youtube.com/watch?v=umw97FYO8Bg">https://www.youtube.com/watch?v=umw97FYO8Bg</a></div>
+</div>
+
+<!-- TIER 2 -->
+<div class="tier tier-2">
+  <div class="tier-header">
+    <span class="tier-badge">TIER 2</span>
+    <span class="tier-label">WATCH IF TIME ALLOWS — 1.5× speed</span>
+  </div>
+  <div class="tier-desc">3–5 questions each. Medium priority.</div>
+  <div class="video-row"><span class="video-name">1. Article</span><a href="https://www.youtube.com/watch?v=MEFxgn0XXMQ">https://www.youtube.com/watch?v=MEFxgn0XXMQ</a></div>
+  <div class="video-row"><span class="video-name">2. Analogy</span><a href="https://www.youtube.com/watch?v=8mOs5FQt4iY">https://www.youtube.com/watch?v=8mOs5FQt4iY</a></div>
+  <div class="video-row"><span class="video-name">3. Adverb</span><a href="https://www.youtube.com/watch?v=ja1tjgLU-Is">https://www.youtube.com/watch?v=ja1tjgLU-Is</a></div>
+  <div class="video-row"><span class="video-name">4. Modal Auxiliary</span><a href="https://www.youtube.com/watch?v=RKhSk1QhWZg">https://www.youtube.com/watch?v=RKhSk1QhWZg</a></div>
+  <div class="video-row"><span class="video-name">5. Question Tags</span><a href="https://www.youtube.com/watch?v=7ehBC3TRNfE">https://www.youtube.com/watch?v=7ehBC3TRNfE</a></div>
+</div>
+
+<!-- TIER 3 -->
+<div class="tier tier-3">
+  <div class="tier-header">
+    <span class="tier-badge">TIER 3</span>
+    <span class="tier-label">SKIM ONLY — Jump to MCQ section at 1.75×</span>
+  </div>
+  <div class="tier-desc">1–2 questions max. Low priority.</div>
+  <div class="video-row"><span class="video-name">1. Foreign Words</span><a href="https://www.youtube.com/watch?v=-670v6-1EZo">https://www.youtube.com/watch?v=-670v6-1EZo</a></div>
+  <div class="video-row"><span class="video-name">2. Figure of Speech</span><a href="https://www.youtube.com/watch?v=glznTeg8GvM">https://www.youtube.com/watch?v=glznTeg8GvM</a></div>
+</div>
+
+<!-- SKIP -->
+<div class="skip-header">❌ &nbsp;SKIP ENTIRELY</div>
+<div class="skip-body">
+  Narration &nbsp;·&nbsp; Preposition &nbsp;·&nbsp; Conjunction &nbsp;·&nbsp;
+  Noun / Pronoun &nbsp;·&nbsp; Causative Verbs &nbsp;·&nbsp;
+  Any intro / revision / PYQ marathon videos
+</div>
+
+<!-- PRACTICE PAPERS -->
+<hr class="divider"/>
+<div class="section-title">📄 &nbsp;Practice Papers &amp; Mock Tests</div>
+
+<div class="res-wrap">
+  <div class="res-row"><span class="res-name">PYQs 2022–2025 (Free PDF)</span><a href="https://admission.aglasem.com/cuet-question-papers/">https://admission.aglasem.com/cuet-question-papers/</a></div>
+  <div class="res-row"><span class="res-name">PYQs with Solutions — Adda247</span><a href="https://www.adda247.com/cuet/previous-year-question-paper">https://www.adda247.com/cuet/previous-year-question-paper</a></div>
+  <div class="res-row"><span class="res-name">Free English Mock Test — Adda247</span><a href="https://www.adda247.com/school/cuet-english-free-mock-test/">https://www.adda247.com/school/cuet-english-free-mock-test/</a></div>
+  <div class="res-row"><span class="res-name">NTA Official Mock Test</span><a href="https://cuet.nta.nic.in">https://cuet.nta.nic.in</a></div>
+  <div class="res-row"><span class="res-name">Vocabulary MCQs — Adda247</span><a href="https://www.adda247.com/school/cuet-vocabulary-important-mcq-questions/">https://www.adda247.com/school/cuet-vocabulary-important-mcq-questions/</a></div>
+  <div class="res-row"><span class="res-name">General English MCQs — cuet.com</span><a href="https://www.cuet.com/cuet-english-language-important-questions">https://www.cuet.com/cuet-english-language-important-questions</a></div>
+</div>
+
+<!-- GOLDEN RULE -->
+<div class="golden">
+  ⚡ &nbsp;GOLDEN RULE: 40% watching → 60% doing MCQs.<br/>
+  After every video, immediately attempt 15–20 questions on that topic. Passive watching = wasted time.
+</div>
+
+<div class="bottom-bar">
+  Exam: 30 May 2026 &nbsp;·&nbsp; 50 Qs &nbsp;·&nbsp; 60 mins &nbsp;·&nbsp; +5 correct / −1 wrong &nbsp;·&nbsp; Max 250 marks
+</div>
+
+</body>
+</html>
